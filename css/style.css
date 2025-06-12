@@ -2,31 +2,41 @@
 
 /* Definindo variáveis CSS para as novas cores */
 :root {
-    --color-primary-blue: #215395; /* Seu azul original */
-    --color-secondary-yellow: #FFCC29; /* Seu amarelo original */
-    --color-background: #2A3B4C; /* Novo cinza azulado escuro para o fundo */
-    --color-text-light: #E0E6EB; /* Cinza claro para textos sobre fundo escuro */
-    --color-detail-blue: #4A7CA6; /* Azul mais claro para detalhes */
-    --color-card-bg: #FFFFFF; /* Manter o fundo do card branco para contraste, ou usar um tom mais suave */
-    /* Se quiser um card um pouco menos branco, experimente #F8F9FA ou #F2F4F7 */
+    --color-primary-blue: #215395;
+    --color-secondary-yellow: #FFCC29;
+    --color-background: #2A3B4C;
+    --color-text-light: #E0E6EB;
+    --color-detail-blue: #4A7CA6;
+    --color-card-bg: #FFFFFF;
 }
 
 /* Novo estilo para o body para o fundo escuro */
 body {
     background-color: var(--color-background);
-    color: var(--color-text-light); /* Cor do texto padrão para o corpo */
+    color: var(--color-text-light);
+}
+
+/* Contêiner do Carrossel */
+#carousel {
+    display: flex;
+    /* AUMENTADO: de 0.7s para 1.0s */
+    transition: transform 1.0s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    will-change: transform;
 }
 
 /* Estilos para o cartão do membro */
 .team-member-card {
     min-width: 100%;
     flex-shrink: 0;
-    transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+    /* AUMENTADO: de 0.7s para 1.0s */
+    transition: transform 1.0s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+                opacity 1.0s ease-in-out; /* Opacity também sincronizada */
     opacity: 0.3;
     transform: scale(0.85);
     margin-right: 0px;
-    background-color: var(--color-card-bg); /* Fundo do card */
-    color: #4a5568; /* Texto interno do card (cinza escuro, mantém contraste com branco do card) */
+    background-color: var(--color-card-bg);
+    color: #4a5568;
+    will-change: transform, opacity;
 }
 
 /* Estilo para o cartão ativo no carrossel */
@@ -40,13 +50,13 @@ body {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #5A6D81; /* Um cinza mais escuro para o indicador inativo, combina com o fundo */
+    background-color: #5A6D81;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 }
 
 .carousel-indicator.active {
-    background-color: var(--color-primary-blue); /* Usando o novo azul */
+    background-color: var(--color-primary-blue);
 }
 
 /* Animações Gerais (mantidas para compatibilidade com AOS) */
@@ -76,8 +86,8 @@ body {
 
 /* Estilo para cada item da atribuição (como um "chip") */
 .assignment-item {
-    background-color: var(--color-secondary-yellow); /* Usando o novo amarelo */
-    color: var(--color-primary-blue); /* Texto para o azul primário para contraste */
+    background-color: var(--color-secondary-yellow);
+    color: var(--color-primary-blue);
     padding: 0.3rem 0.7rem;
     border-radius: 9999px;
     font-size: 0.875rem;
@@ -85,25 +95,37 @@ body {
     white-space: nowrap;
     opacity: 0;
     transform: translateY(10px);
-    transition: all 0.4s ease-out;
+    transition: none; /* remove qualquer transição para evitar conflito com animation */
 }
 
-/* Animação para cada item da lista (chamada via JS) */
-.assignment-item.visible {
-    opacity: 1;
-    transform: translateY(0);
+/* Nova animação de keyframes para os chips */
+@keyframes chipFadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+
+/* Classe de gatilho para a animação sequencial dos chips */
+.assignments-list.animate-chips .assignment-item {
+    animation: chipFadeInUp 0.4s ease-out forwards;
+    /* Delay será adicionado via inline style no JS */
+}
+
 
 /* Estilos para a borda da imagem do perfil */
 .team-member-card img {
-    border-color: var(--color-detail-blue); /* Usando o azul de detalhe para a borda */
+    border-color: var(--color-detail-blue);
 }
 
 /* Estilo para a cor do texto do cargo */
 .role-text-color {
-    color: var(--color-primary-blue); /* Aplicando o novo azul à cor do cargo */
+    color: var(--color-primary-blue);
 }
-
 
 /* Scrollbar styling (for a nicer look) */
 .assignments-list::-webkit-scrollbar {
@@ -111,15 +133,15 @@ body {
 }
 
 .assignments-list::-webkit-scrollbar-track {
-    background: #3A4C5E; /* Um tom um pouco mais claro que o fundo para a track */
+    background: #3A4C5E;
     border-radius: 10px;
 }
 
 .assignments-list::-webkit-scrollbar-thumb {
-    background: #6B7C8F; /* Um cinza azulado médio para o thumb */
+    background: #6B7C8F;
     border-radius: 10px;
 }
 
 .assignments-list::-webkit-scrollbar-thumb:hover {
-    background: #8090A0; /* Um cinza azulado mais claro no hover */
+    background: #8090A0;
 }

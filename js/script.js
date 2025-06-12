@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const assignmentsHtml = member.bio.map((assignment, idx) => `
-            <span class="assignment-item" data-aos="fade-up" data-aos-delay="${50 * idx}" data-aos-once="true">${assignment}</span>
+            <span class="assignment-item" style="animation-delay: ${50 * idx}ms;">${assignment}</span>
         `).join('');
 
         memberCard.innerHTML = `
@@ -144,6 +144,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderCarousel() {
+        const currentActiveCard = carousel.querySelector('.team-member-card.active');
+        if (currentActiveCard) {
+            const currentAssignmentsList = currentActiveCard.querySelector('.assignments-list');
+            if (currentAssignmentsList) {
+                currentAssignmentsList.classList.remove('animate-chips');
+            }
+        }
+
         carousel.innerHTML = '';
         carouselIndicators.innerHTML = '';
 
@@ -171,17 +179,20 @@ document.addEventListener('DOMContentLoaded', () => {
             const offset = (carousel.offsetWidth / 2) - (cardWidth / 2) - (currentIndex * cardWidth);
             carousel.style.transform = `translateX(${offset}px)`;
 
-            const activeCard = carousel.querySelector('.team-member-card.active');
-            if (activeCard) {
-                const assignmentItems = activeCard.querySelectorAll('.assignment-item');
-                assignmentItems.forEach((item, idx) => {
-                    item.classList.remove('visible');
-                    void item.offsetWidth;
-                    setTimeout(() => {
-                        item.classList.add('visible');
-                    }, 50 * idx);
-                });
-            }
+            // Dispara a animação dos chips APÓS a transição do carrossel ter terminado
+            carousel.addEventListener('transitionend', function handler(event) {
+                if (event.target === carousel) {
+                    const activeCard = carousel.querySelector('.team-member-card.active');
+                    if (activeCard) {
+                        const assignmentsList = activeCard.querySelector('.assignments-list');
+                        if (assignmentsList) {
+                            void assignmentsList.offsetWidth; // Força reflow (ainda pode ser útil para resetar animação)
+                            assignmentsList.classList.add('animate-chips');
+                        }
+                    }
+                    carousel.removeEventListener('transitionend', handler);
+                }
+            }, { once: true });
         }
     }
 
@@ -199,9 +210,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function startAutoplay() {
+        // AUMENTADO: de 4000ms para 5500ms (5.5 segundos)
+        // Isso dá 1 segundo para a transição e 4.5 segundos para o card ficar visível
         autoplayInterval = setInterval(() => {
             showNextSlide();
-        }, 4000);
+        }, 5500);
     }
 
     function resetAutoplay() {
@@ -219,10 +232,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     renderCarousel();
+
+    // Disparo inicial da animação dos chips para o primeiro card
+    setTimeout(() => {
+        const initialActiveCard = carousel.querySelector('.team-member-card.active');
+        if (initialActiveCard) {
+            const assignmentsList = initialActiveCard.querySelector('.assignments-list');
+            if (assignmentsList) {
+                assignmentsList.classList.add('animate-chips');
+            }
+        }
+    }, 100);
+
     startAutoplay();
 
     window.addEventListener('resize', () => {
-        renderCarousel();
         resetAutoplay();
+        renderCarousel();
     });
 });
