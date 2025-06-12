@@ -210,8 +210,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function startAutoplay() {
-        // AUMENTADO: de 4000ms para 5500ms (5.5 segundos)
-        // Isso dá 1 segundo para a transição e 4.5 segundos para o card ficar visível
         autoplayInterval = setInterval(() => {
             showNextSlide();
         }, 15000);
