@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Isso dá 1 segundo para a transição e 4.5 segundos para o card ficar visível
         autoplayInterval = setInterval(() => {
             showNextSlide();
-        }, 8500);
+        }, 15000);
     }
 
     function resetAutoplay() {
