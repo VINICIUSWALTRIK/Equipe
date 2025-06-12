@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const teamMembers = [
         {
-            name: "Vinicius",
-            role: "Analista de Suporte Junior",
+            name: "Vinicius Waltrik",
+            role: "Analista de Suporte de Sistemas Junior",
             bio: [
                 "Sankhya",
                 "Implantação de lojas - Completo",
@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         },
         {
-            name: "Samuel",
-            role: "Analista de Suporte Junior",
+            name: "Samuel Vasques",
+            role: "Analista de Suporte de Sistemas Junior",
             bio: [
                 "Locação protegida",
                 "Cadastro de equipamentos - GAT",
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Devolução",
                 "SMTP"
             ],
-            image: "assets/img/construlino.png",
+            image: "assets/img/Samuel.png",
             social: {
                 linkedin: "#",
                 github: "",
@@ -42,8 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         },
         {
-            name: "Dorival",
-            role: "Analista de Suporte Junior",
+            name: "Dorival Junior",
+            role: "Analista de Suporte de Sistemas Junior",
             bio: [
                 "Homologação de contas bancárias",
                 "Pix dinâmico",
@@ -62,8 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         },
         {
-            name: "Teilor",
-            role: "Analista de Suporte Junior",
+            name: "Teilor Apolinário",
+            role: "Analista de Suporte de Sistemas Junior",
             bio: [
                 "Instalação CCL / Problemas com atualizador",
                 "Validação de aplice locação protegida",
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Capacitação on-line",
                 "Auditar status aguardando solicitante e em andamento"
             ],
-            image: "assets/img/construlino.png",
+            image: "assets/img/Teilor.jpg",
             social: {
                 linkedin: "#",
                 github: "",
@@ -79,8 +79,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         },
         {
-            name: "Bruno",
-            role: "Analista de Suporte Pleno",
+            name: "Bruno Beloto",
+            role: "Analista de Suporte de Sistemas Pleno",
             bio: [
                 "Dúvidas e problemas com o Gerencial",
                 "Cadastro de equipamento - GAT",
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Transferência de equipamento",
                 "Banco de Oferta"
             ],
-            image: "assets/img/construlino.png",
+            image: "assets/img/Bruno Beloto.jpg",
             social: {
                 linkedin: "#",
                 github: "",
