@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function startAutoplay() {
         autoplayInterval = setInterval(() => {
             showNextSlide();
-        }, 15000);
+        }, 13000);
     }
 
     function resetAutoplay() {
