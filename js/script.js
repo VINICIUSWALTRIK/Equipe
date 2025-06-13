@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Transferência de equipamento",
                 "Banco de Oferta"
             ],
-            image: "assets/img/Bruno Beloto.jpg",
+            image: "assets/img/Bruno Beloto.png",
             social: {
                 linkedin: "#",
                 github: "",
