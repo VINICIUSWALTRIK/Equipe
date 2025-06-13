@@ -99,12 +99,12 @@ body {
 /* Nova animação de keyframes para os chips */
 @keyframes chipFadeInUp {
     from {
-        opacity: 0;
+        opacity: 1;
         transform: translateY(10px);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(1px);
     }
 }
 
