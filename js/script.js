@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 twitter: ""
             }
         },
-        {
+        /*{
             name: "Dorival Junior",
             role: "Analista de Suporte de Sistemas Junior",
             bio: [
@@ -60,16 +60,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 github: "",
                 twitter: ""
             }
-        },
+        },*/
         {
             name: "Teilor Apolinário",
             role: "Analista de Suporte de Sistemas Junior",
             bio: [
-                "Instalação CCL / Problemas com atualizador",
-                "Validação de aplice locação protegida",
-                "Cadastro de Clientes",
+                "Contagem / Afastamento Digital",
+                "Locação protegida",
+                "Inserir/Remover Períodos de Locação",
                 "Capacitação on-line",
-                "Auditar status aguardando solicitante e em andamento"
+                "Banco de Oferta",
+                "Pix dinâmico",
+                "Homologação de contas bancárias"
             ],
             image: "assets/img/Teilor.jpg",
             social: {
