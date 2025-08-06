@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 twitter: ""
             }
         },
-        {
+        /*{
             name: "Samuel Vasques",
             role: "Analista de Suporte de Sistemas Junior",
             bio: [
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 github: "",
                 twitter: ""
             }
-        },
+        },*/
         /*{
             name: "Dorival Junior",
             role: "Analista de Suporte de Sistemas Junior",
