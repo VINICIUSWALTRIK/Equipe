@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 twitter: ""
             }
         },
-        /*{
-            name: "Samuel Vasques",
+        {
+            name: "Pablo Ramos",
             role: "Analista de Suporte de Sistemas Junior",
             bio: [
                 "Locação protegida",
@@ -34,15 +34,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Devolução",
                 "SMTP"
             ],
-            image: "assets/img/Samuel.png",
+            image: "assets/img/pablo.png",
             social: {
                 linkedin: "#",
                 github: "",
                 twitter: ""
             }
-        },*/
-        /*{
-            name: "Dorival Junior",
+        },
+        {
+            name: "Maxwell Rodrigues",
             role: "Analista de Suporte de Sistemas Junior",
             bio: [
                 "Homologação de contas bancárias",
@@ -54,13 +54,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Implantação de Lojas",
                 "Inserir/Remover Períodos de Locação"
             ],
-            image: "assets/img/Dorivas.jpeg",
+            image: "assets/img/Max.png",
             social: {
                 linkedin: "#",
                 github: "",
                 twitter: ""
             }
-        },*/
+        },
         {
             name: "Teilor Apolinário",
             role: "Analista de Suporte de Sistemas Junior",
