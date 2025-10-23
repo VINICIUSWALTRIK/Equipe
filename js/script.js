@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const teamMembers = [
-        {
+        /*{
             name: "Vinicius Waltrik",
             role: "Analista de Suporte de Sistemas Junior",
             bio: [
@@ -20,17 +20,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 github: "",
                 twitter: ""
             }
-        },
+        },*/
         {
             name: "Pablo Ramos",
             role: "Analista de Suporte de Sistemas Junior",
             bio: [
-                "Locação protegida",
+                "Locação protegida - Apolices",
                 "Cadastro de equipamentos - GAT",
                 "Contrato Clicksign",
                 "Roteiro Digital",
                 "Erros e Dúvidas de NFE",
                 "Pix dinâmico",
+                "Sankhya",
                 "Devolução",
                 "SMTP"
             ],
@@ -80,6 +81,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 twitter: ""
             }
         },
+                {
+            name: "Gabrielle Santos",
+            role: "Jovem Aprendiz",
+            bio: [
+                "Instalação CCL / EAD",
+                "Locação protegida - Apolices",
+                "Capacitação on-line",
+                "Erros Atualização",
+                "Homologação de contas bancárias"
+            ],
+            image: "assets/img/Gabrielle.png",
+            social: {
+                linkedin: "#",
+                github: "",
+                twitter: ""
+            }
+        },
         {
             name: "Bruno Beloto",
             role: "Analista de Suporte de Sistemas Pleno",
@@ -90,7 +108,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Fechamento de caixa",
                 "Bugs e Erros no sistema",
                 "Reembolso",
-                "Substituição",
                 "Devolução",
                 "Transferência de equipamento",
                 "Banco de Oferta"
