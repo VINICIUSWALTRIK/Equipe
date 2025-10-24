@@ -68,8 +68,6 @@ body {
     opacity: 0;
 }
 
-/* NOVOS ESTILOS E ANIMAÇÕES PARA A LISTAGEM */
-
 /* Contêiner da lista de atribuições */
 .assignments-list {
     display: flex;
@@ -82,7 +80,7 @@ body {
     padding-right: 5px;
 }
 
-/* Estilo para cada item da atribuição (como um "chip") */
+/* Estilo para cada item da atribuição*/
 .assignment-item {
     background-color: var(--color-secondary-yellow);
     color: var(--color-primary-blue);

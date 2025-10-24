@@ -25,15 +25,20 @@ document.addEventListener('DOMContentLoaded', () => {
             name: "Pablo Ramos",
             role: "Analista de Suporte de Sistemas Junior",
             bio: [
-                "Locação protegida - Apolices",
-                "Cadastro de equipamentos - GAT",
-                "Contrato Clicksign",
-                "Roteiro Digital",
-                "Erros e Dúvidas de NFE",
-                "Pix dinâmico",
-                "Sankhya",
-                "Devolução",
-                "SMTP"
+                "TRANSFERENCIAS ESTOQUE - ERROS DE MOVIMENTAÇÕES",
+                "FATURAMENTO / EMISSÃO DE CONTRATOS",
+                "CONTAGEM DIGTAL",
+                "ROTEIRO DIGITAL",
+                "AFASTAMENTO DIGITAL",
+                "CONTRATO DIGITAL",
+                "SANKHYA",
+                "HOMOLOGAÇÃO BOLETOS",
+                "ERRO BOLETOS",
+                "HOMOLOGAÇÃO PIX DINAMICO",
+                "ERRO PIX DINAMICO E LINK DE PAGAMENTO",
+                "CADASTRO DE EQUIPAMENTOS",
+                "SUPORTE A CONSULTORES",
+                "ERROS DEVOLUÇÃO"
             ],
             image: "assets/img/pablo.png",
             social: {
@@ -46,14 +51,21 @@ document.addEventListener('DOMContentLoaded', () => {
             name: "Maxwell Rodrigues",
             role: "Analista de Suporte de Sistemas Junior",
             bio: [
-                "Homologação de contas bancárias",
-                "Pix dinâmico",
-                "Contagem digital",
-                "Afastamento Digital",
-                "Erro ao emitir Contrato",
-                "Sankhya",
-                "Implantação de Lojas",
-                "Inserir/Remover Períodos de Locação"
+                "TRANSFERENCIAS ESTOQUE - ERROS DE MOVIMENTAÇÕES",
+                "MOVIMENTAÇÕES FINANCEIRAS",
+                "CONTAGEM DIGTAL",
+                "ROTEIRO DIGITAL",
+                "AFASTAMENTO DIGITAL",
+                "CONTRATO DIGITAL",
+                "SMTP",
+                "SANKHYA",
+                "HOMOLOGAÇÃO BOLETOS",
+                "ERRO BOLETOS",
+                "HOMOLOGAÇÃO PIX DINAMICO",
+                "ERRO PIX DINAMICO E LINK DE PAGAMENTO",
+                "NFE EM GERAL",
+                "ERRO RELATORIOS",
+                "CHAVE DE REGISTRO"
             ],
             image: "assets/img/Max.png",
             social: {
@@ -66,13 +78,13 @@ document.addEventListener('DOMContentLoaded', () => {
             name: "Teilor Apolinário",
             role: "Analista de Suporte de Sistemas Junior",
             bio: [
-                "Contagem / Afastamento Digital",
-                "Locação protegida",
-                "Inserir/Remover Períodos de Locação",
-                "Capacitação on-line",
-                "Banco de Oferta",
-                "Pix dinâmico",
-                "Homologação de contas bancárias"
+                "BANCO DE OFERTAS",
+                "GERENCIAL",
+                "FECHAMENTO",
+                "REEMBOLSO",
+                "ERROS DEVOLUÇÃO",
+                "NFE EM GERAL",
+                "ERRO RELATORIOS"
             ],
             image: "assets/img/Teilor.jpg",
             social: {
@@ -85,11 +97,11 @@ document.addEventListener('DOMContentLoaded', () => {
             name: "Gabrielle Santos",
             role: "Jovem Aprendiz",
             bio: [
-                "Instalação CCL / EAD",
-                "Locação protegida - Apolices",
-                "Capacitação on-line",
-                "Erros Atualização",
-                "Homologação de contas bancárias"
+                "SMTP",
+                "CHAVE DE REGISTRO",
+                "SUPORTE A CONSULTORES",
+                "SUGESTÕES DE MELHORIA",
+                "INSTALAÇÕES EM GERAL"
             ],
             image: "assets/img/Gabrielle.png",
             social: {
@@ -102,15 +114,15 @@ document.addEventListener('DOMContentLoaded', () => {
             name: "Bruno Beloto",
             role: "Analista de Suporte de Sistemas Pleno",
             bio: [
-                "Dúvidas e problemas com o Gerencial",
-                "Cadastro de equipamento - GAT",
-                "Faturamento em geral",
-                "Fechamento de caixa",
-                "Bugs e Erros no sistema",
-                "Reembolso",
-                "Devolução",
-                "Transferência de equipamento",
-                "Banco de Oferta"
+                "BANCO DE OFERTAS",
+                "TRANSFERENCIAS - MOVIMENTAÇÕES FINANCEIRAS",
+                "GERENCIAL",
+                "CADASTRO DE EQUIPAMENTOS",
+                "FECHAMENTO",
+                "REEMBOLSO",
+                "SUGESTÃO DE MELHORIA",
+                "FATURAMENTO / EMISSÃO DE CONTRATOS"
+
             ],
             image: "assets/img/Bruno Beloto.png",
             social: {
