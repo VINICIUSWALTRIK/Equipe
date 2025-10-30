@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
             name: "Pablo Ramos",
             role: "Analista de Suporte de Sistemas Junior",
             bio: [
-                "TRANSFERENCIAS ESTOQUE - ERROS DE MOVIMENTAÇÕES",
                 "FATURAMENTO / EMISSÃO DE CONTRATOS",
                 "CONTAGEM DIGTAL",
                 "ROTEIRO DIGITAL",
@@ -64,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "HOMOLOGAÇÃO PIX DINAMICO",
                 "ERRO PIX DINAMICO E LINK DE PAGAMENTO",
                 "NFE EM GERAL",
-                "ERRO RELATORIOS",
+                "ERROS DEVOLUÇÃO",
                 "CHAVE DE REGISTRO"
             ],
             image: "assets/img/Max.png",
@@ -84,6 +83,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 "REEMBOLSO",
                 "ERROS DEVOLUÇÃO",
                 "NFE EM GERAL",
+                "AFASTAMENTO DIGITAL",
+                "CONTAGEM DIGITAL",
                 "ERRO RELATORIOS"
             ],
             image: "assets/img/Teilor.jpg",
@@ -121,6 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "FECHAMENTO",
                 "REEMBOLSO",
                 "SUGESTÃO DE MELHORIA",
+                "SUPORTE N3",
                 "FATURAMENTO / EMISSÃO DE CONTRATOS"
 
             ],
