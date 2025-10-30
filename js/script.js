@@ -52,9 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
             bio: [
                 "TRANSFERENCIAS ESTOQUE - ERROS DE MOVIMENTAÇÕES",
                 "MOVIMENTAÇÕES FINANCEIRAS",
-                "CONTAGEM DIGTAL",
                 "ROTEIRO DIGITAL",
-                "AFASTAMENTO DIGITAL",
                 "CONTRATO DIGITAL",
                 "SMTP",
                 "SANKHYA",
